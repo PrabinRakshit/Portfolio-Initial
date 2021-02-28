@@ -1,0 +1,868 @@
+/*................................Body.................................*/
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+	/*font-size: 30px;*/
+}
+
+/*..................................Header...............................*/
+
+#body-header {
+	height: 65vh;
+	width: 100%;
+	background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+	background-size: cover;
+	background-position: center;
+	opacity: 0.8;
+	background-attachment: fixed;
+	padding-top: 1.2rem;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*..................................Horizontal List.................................*/
+
+.horizontal-list {
+	margin: 0px;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.horizontal-list li {
+	display: inline-block;
+	margin: 0px 10px 10px 0px;
+	font-size: 0.9rem;
+	font-weight: 100;
+}
+
+.horizontal-list li a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-menu li a:hover {
+	color: lightgrey;
+	border-bottom: 1px solid black;
+	transition: color 0.5s, border-bottom 3s;
+}
+
+#drop-down * {
+	color: white;
+}
+
+#drop-down {
+	display: none;
+	position: relative;
+	left: 90%;
+	top: 1%;
+}
+
+
+#drop-down span {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+}
+
+.drop-down-menu {
+	display: none;
+	list-style: none;
+	position: absolute;
+	padding: 5px 10px 5px;
+	line-height: 1.5em;
+	background-color: grey;
+	width: 85px;
+	left: -70px;
+	top: 3px;
+}
+
+#drop-down .drop-down-menu li {
+	text-align: left;
+}
+
+#drop-down .drop-down-menu li a {
+	text-decoration: none;
+}
+
+#drop-down:hover .drop-down-menu {
+	display: block;
+}
+
+
+/*.....................................Header Name......................................*/
+
+#my-name {
+	color: #ffffff;
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+#name-social-container {
+	margin-top: 20vh;
+}
+
+
+/*.....................................Social Links.....................................*/
+
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i {
+    width: 1rem;
+    padding: 10px;
+}
+
+
+/*.....................................About Section......................................*/
+
+
+section {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:nth-child(odd) {
+	background-color: white;
+}
+
+section:nth-child(even) {
+	background-color: #e8e8e8;
+}
+
+
+.section-heading {
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+	justify-content: center;
+}
+
+
+.section-heading span {
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.5rem;
+}
+
+
+#about {
+	height: auto;
+	width: 70%;
+	position: relative;
+	margin: auto;
+
+}
+
+#my-image {
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -14vh;
+}
+
+#my-image img {
+	height: 100%;
+	width: 100%;
+	border: 2px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 0px 3px 3px lightgrey;
+}
+
+#about p {
+	font-size: 1.1rem;
+	/*font-weight: 500px;*/
+	text-align: justify;
+	color: grey;
+	line-height: 28px;
+	margin-bottom: 80px;
+}
+
+
+
+/*......................................Skills Section........................................*/
+
+
+
+
+.skills-display {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	/*border: 1px solid black;*/
+	/*height: 200px;*/
+}
+
+
+.skill-progress {
+	width: 10rem;
+	height: 1.4rem;
+	margin: 1.8rem;
+	border: 1px solid darkgrey;
+	background-color: lightgrey;
+	border-radius: 0.8rem;
+}
+
+
+.skill-progress>div {
+	border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span {
+	color: white;
+	font-size: 0.8rem;
+	box-sizing: border-box;
+	margin-left: 8px;
+}
+
+
+
+/*...................Experience Section / Education Section..........................*/
+
+/*#experience h1 {
+	display: flex;
+	min-width: 1em;
+	flex-wrap: nowrap;
+	font-size: 3vw;
+}*/
+
+
+
+/*Timeline*/
+
+.timeline-container {
+	width: 75%;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+/*.timeline-container::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	border: 1px dashed #0096fa6b;
+	left: 50%;
+	top: 50px;
+	bottom: 50px;
+	margin-left: -0.5px;
+}*/
+
+.timeline-box {
+	width: 40%;
+	position: relative;
+	min-height: 150px;
+	margin: 5px;
+	left: 5%;
+}
+
+.timeline-box:nth-child(even) {
+	left: 54%;
+}
+
+.timeline-box>h3 {
+	color: #2857a4;
+	margin-bottom: 0px;
+}
+
+.timeline-box:nth-of-type(odd)>* {
+	text-align: right;
+}
+
+.timeline-box:nth-of-type(odd)>h3::before {
+	content: "";
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*margin-right: 100px;*/
+	float: left;
+
+}
+
+#experience>.timeline-container>.timeline-box:nth-of-type(odd)>h3::before {
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+}
+
+.timeline-box:nth-of-type(even)>h3::after {
+	content: "";
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*margin-left: 100px;*/
+	float: right;
+}
+
+#experience>.timeline-container>.timeline-box:nth-of-type(even)>h3::after {
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+}
+
+
+.timeline-box>p:first-of-type {
+	margin-top: 5px;
+	color: orange;
+	margin-bottom: 0px;
+}
+
+.timeline-box>p:nth-of-type(2) {
+	color: grey;
+	margin-top: 0px;
+}
+
+.timeline-box>p:last-of-type {
+	color: grey;
+	text-align: justify;
+}
+
+.timeline-box:nth-child(odd)::after {
+	content: "";
+	position: absolute;
+	background-color: darkgrey;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	top: 25%;
+	right: -12%;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(even)::before {
+	content: "";
+	position: absolute;
+	background-color: darkgrey;
+	border-radius: 50%;
+	width: 0.5rem;
+	height: 0.5rem;
+	top: 29%;
+	left: -12%;
+	z-index: 1;
+}
+
+
+.timeline-divider {
+	position: absolute;
+	height: 62%;
+	width: 0;
+	border: 1px dashed #0096fa6b;
+	left: 50%;
+	top: 11%;
+	margin-left: -0.5px;
+}
+
+
+.timeline-icon {
+	position: sticky;
+	text-align: center;
+	transform: rotate(90deg);
+	top: 30%;
+	color: #2857a4;
+	z-index: 2;
+}
+
+
+
+/*Education Icon*/
+
+
+#education>.timeline-container>.timeline-box:nth-of-type(odd)>h3::before {
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+}
+
+#education>.timeline-container>.timeline-box:nth-of-type(even)>h3::after {
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+}
+
+
+
+/*...................Common Margin / Text Align Classes.....................*/
+
+
+.mb75px {
+	margin-bottom: 75px;
+}
+
+
+/*...................Common Color Classes......................*/
+
+
+.text-highlight {
+	color: #2857a4;
+	font-weight: 600;
+}
+
+.mb-blue {
+	background-color: #2857a4;
+}
+
+
+.mb-orange {
+	background-color: #ec4d1c;
+}
+
+
+.mb-greypink {
+	background-color: #93738c;
+}
+
+
+.mb-green {
+	background-color: #0b8176;
+}
+
+/*...................Common Percentage Classes........................*/
+
+
+.fifty-percent {
+    width: 50%;
+    height: inherit;
+}
+
+
+.eighty-percent {
+    width: 80%;
+    height: inherit;
+}
+
+
+.eighty-five-percent {
+	width: 85%;
+	height: inherit;
+}
+
+
+/*...................Portfolio Section..........................*/
+
+
+.portfolio-display {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	padding: 0 50px;
+	justify-content: space-around;
+}
+
+
+.portfolio-image-container {
+	margin: 2rem;
+	position: relative;
+	max-width: 19rem;
+}
+
+
+.image {
+	/*opacity: 1;*/
+	width: 100%;
+	display: block;
+}
+
+
+.middle {
+	transition: all 0.5s ease-in-out;
+  	/*opacity: 0;*/
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	top: 0px;
+  	color: transparent;
+  	
+  	text-align: center;
+ }
+
+
+.portfolio-image-container:hover {
+	box-shadow: 0 0 20px #74ADC8;
+	/*opacity: 1;*/
+}
+.portfolio-image-container:hover .middle {
+	/*opacity: 1;*/
+	color: white;
+	background-color: #80808078;
+}
+
+
+.text {
+	/*background-color: #c3c3c3;*/
+	/*color: white;*/
+	font-size: 2rem;
+	margin-top: 40px;
+}
+
+
+/*...................Contact Section..........................*/
+
+
+#contact {
+	background-image: linear-gradient(to top right, blue, purple);
+	padding-bottom: 60px;
+	align-items: center;
+}
+
+#contact * {
+	color: white;
+}
+
+#contact a i {
+	margin: 0px 15px 15px 0px;
+}
+
+
+.contact-details-container {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 25px;
+	justify-content: space-around;
+	width: 75%;
+}
+
+.input-details-container {
+	max-width: 400px;
+	min-width: 200px;
+	margin-bottom: 60px;
+	margin-right: 30px;
+	flex-shrink: 1;
+}
+
+.input-details-container>form{
+	text-align: center;
+}
+
+.input-details-container>form>input{
+	width: 100%;
+	line-height: 3rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+}
+
+.input-details-container>form>input:last-of-type {
+	line-height: 4rem;
+}
+
+.input-details-container>form>button {
+	background-color: transparent;
+	border: 2px solid white;
+	margin-top: 2rem;
+	width: 120px;
+	height: 35px;
+	font-size: 10px;
+	padding: 10px;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	overflow: hidden;
+}
+
+.address-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	min-width: 200px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	flex-shrink: 1;
+}
+
+.address-container>* {
+	margin-bottom: 0px;
+	margin-top: 10px;
+}
+
+.address-container p {
+	color: darkslategrey;
+	font-size: 0.9rem;
+}
+
+.address-container p:last-child a {
+	text-decoration: none;
+}
+
+.address-icon-container {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+
+
+/*.....Media Queries.....*/
+
+
+@media screen and (max-width:768px) {
+
+	html {
+		font-size: 15px !important;
+	}
+
+	.contact-details-container {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.input-details-container {
+		max-width: 100%
+	}
+
+	.address-container {
+		margin-left: 0px;
+		max-width: 100%
+	}
+
+	.timeline-container {
+		width: 90%;
+		margin-right: 20%;
+		position: relative;
+		padding-bottom: 20px;
+		/*margin-left: 20%;*/
+	}
+
+	.timeline-box {
+		width: 80%;
+		position: relative;
+		min-height: 150px;
+		margin: 3em 1em;
+		left: 20%;
+	}
+
+	.timeline-box:nth-child(even) {
+		left: 20%;
+	}
+
+	.timeline-box:nth-of-type(odd)> * {
+		text-align: left;
+	}
+
+	.timeline-box:nth-of-type(odd)>h3::before {
+		content: none;	
+	}
+
+	.timeline-box>h3::after {
+		content: "";
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		/*margin-left: 100px;*/
+		float: right;
+	}
+
+	#experience>.timeline-container>.timeline-box>h3::after {
+		content: "";
+		background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+	}
+
+	#education>.timeline-container>.timeline-box>h3::after {
+		background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+	}
+
+
+	.timeline-box:nth-child(odd)::after {
+		content: none;
+	}
+
+
+	.timeline-box:nth-child(even)::before {
+		content: "";
+		position: absolute;
+		background-color: darkgrey;
+		border-radius: 50%;
+		width: 0.5rem;
+		height: 0.5rem;
+		top: 29%;
+		left: -11%;
+		z-index: 1;
+	}
+
+
+	.timeline-box::before {
+		content: "";
+		position: absolute;
+		background-color: darkgrey;
+		border-radius: 50%;
+		width: 0.5rem;
+		height: 0.5rem;
+		top: 29%;
+		left: -11%;
+		z-index: 1;
+	}
+
+
+	.timeline-divider {
+		position: absolute;
+		left: 14%;
+		height: 60%;
+		width: 0;
+		border: 1px dashed #0096fa6b;
+		top: 14%;
+		/*margin-left: -0.5px;*/
+	}
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:572px) {
+
+	html {
+		font-size: 15px !important;
+	}
+
+	#body-header{
+		height: 40vh;
+	}
+
+	#body-header nav {
+		display: none;
+	}
+
+	#drop-down {
+		display: block;
+	}
+
+
+	#name-social-container {
+		margin-top: 10vh;
+	}
+
+	#my-name {
+		font-size: 2.5em;
+		margin-bottom: 5px;
+	}
+
+	section h1 {
+		margin: auto !important;
+		display: flex !important;
+		width: 100% !important;
+		justify-content: center !important;
+	}
+
+	section>h1>span {
+		font-size: 1.2em !important;
+	}
+
+	.timeline-container {
+		width: 90%;
+		margin-right: 20%;
+		position: relative;
+		padding-bottom: 20px;
+		/*margin-left: 20%;*/
+	}
+
+	.timeline-box {
+		width: 80%;
+		position: relative;
+		min-height: 150px;
+		margin: 3em 1em;
+		left: 20%;
+	}
+
+	.timeline-box:nth-child(even) {
+		left: 20%;
+	}
+
+	.timeline-box:nth-of-type(odd)> * {
+		text-align: left;
+	}
+
+	.timeline-box:nth-of-type(odd)>h3::before {
+		content: none;	
+	}
+
+	.timeline-box>h3::after {
+		content: "";
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		/*margin-left: 100px;*/
+		float: right;
+	}
+
+	#experience>.timeline-container>.timeline-box>h3::after {
+		content: "";
+		background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+	}
+
+	#education>.timeline-container>.timeline-box>h3::after {
+		background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+	}
+
+
+	.timeline-box:nth-child(odd)::after {
+		content: none;
+	}
+
+
+	.timeline-box:nth-child(even)::before {
+		content: "";
+		position: absolute;
+		background-color: darkgrey;
+		border-radius: 50%;
+		width: 0.5rem;
+		height: 0.5rem;
+		top: 29%;
+		left: -15%;
+		z-index: 1;
+	}
+
+
+	.timeline-box::before {
+		content: "";
+		position: absolute;
+		background-color: darkgrey;
+		border-radius: 50%;
+		width: 0.5rem;
+		height: 0.5rem;
+		top: 29%;
+		left: -15%;
+		z-index: 1;
+	}
+
+
+	.timeline-divider {
+		position: absolute;
+		left: 14%;
+		height: 62%;
+		width: 0;
+		border: 1px dashed #0096fa6b;
+		top: 13%;
+		margin-left: -0.5px;
+	}
+
+
+	#contact .horizontal-list a i {
+		margin-right: 2px;
+	}
+
+
+	.contact-details-container {
+		flex-wrap: wrap;
+	}
+
+}
